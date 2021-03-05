@@ -1,0 +1,79 @@
+html {
+  --rd: 40vh;
+}
+
+#p1 {
+  top: 10vh;
+  left: 10vh;
+}
+
+#p2 {
+  top: 100vh;
+  left: 90vh;
+}
+
+#p3 {
+  top: 30vh;
+  left: 190vh;
+}
+
+#p4 {
+  top: 140vh;
+  left: 230vh;
+}
+
+#p5 {
+  top: 80vh;
+  left: 320vh;
+}
+
+#r1 {
+  top: calc(10vh + var(--rd) * 1.2 / 2);
+  left: calc(10vh + var(--rd) * 1.2 / 2);
+  height: 120.415vh;
+  transform: rotate(-41.634deg);
+}
+
+#r2 {
+  top: calc(100vh + var(--rd) * 1.2 / 2);
+  left: calc(90vh + var(--rd) * 1.2 / 2);
+  height: 122.065vh;
+  transform: rotate(-124.99199999999999deg);
+}
+
+#r3 {
+  top: calc(30vh + var(--rd) * 1.2 / 2);
+  left: calc(190vh + var(--rd) * 1.2 / 2);
+  height: 117.046vh;
+  transform: rotate(-19.983999999999995deg);
+}
+
+#r4 {
+  top: calc(140vh + var(--rd) * 1.2 / 2);
+  left: calc(230vh + var(--rd) * 1.2 / 2);
+  height: 108.166vh;
+  transform: rotate(-123.69deg);
+}
+
+/*座標の入力で間に渡す橋のcssを書く　atanの性質上若干バグがある
+#1つ目のx座標→1つ目のy座標→2つ目x座標→・・・　という順で入力
+#X座標はcssでいうleft / y座標はcssでいうtop であることに注意
+import math
+WL=[]
+HL=[]
+while True:
+    try:
+        W=int(input())
+        H=int(input())
+        WL.append(W)
+        HL.append(H)
+    except:#数値以外を入力すると入力が終了する
+        break
+
+for i in range(len(WL)-1):
+    slope=-90+int(math.atan((HL[i]-HL[i+1])/(WL[i]-WL[i+1]))/math.pi*180*1000)/1000
+    distance=int(math.sqrt((HL[i]-HL[i+1])**2+(WL[i]-WL[i+1])**2)*1000)/1000
+    r="#r"+str(i+1)+"{top:calc("+str(HL[i])+"vh + var(--rd) * 1.2 / 2);left:calc("+str(WL[i])+"vh + var(--rd) * 1.2 / 2);height:"+str(distance)+"vh;transform:rotate("+str(slope)+"deg);}"
+    print(r)
+
+*/

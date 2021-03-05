@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Moscwa</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image" content="og.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+</head>
+
+<body>
+  <div id="main">
+      <div id="title">
+        <span>M</span>
+        <span>O</span>
+        <span>S</span>
+        <span>C</span>
+        <span>W</span>
+        <span>A</span>
+      </div>
+    <div class="outer_point" id="p1">
+      <div class="point">
+        <div class="inner_point">
+          <h2>Start</h2>
+        </div>
+      </div>
+    </div>
+    <div class="outer_point dis" id="p2">
+      <div class="point">
+        <div class="inner_point">
+          <h2>Creator</h2>
+        </div>
+      </div>
+    </div>
+    <div class="outer_point dis" id="p3">
+      <div class="point">
+        <div class="inner_point">
+          <h2>Tech</h2>
+        </div>
+      </div>
+    </div>
+    <div class="outer_point dis" id="p4">
+      <div class="point">
+        <div class="inner_point">
+          <h2>Works</h2>
+        </div>
+      </div>
+    </div>
+    <div class="outer_point dis" id="p5">
+      <div class="point">
+        <div class="inner_point">
+          <h2>Work</h2>
+        </div>
+      </div>
+    </div>
+    <div class="route" id="r1"></div>
+    <div class="route" id="r2"></div>
+    <div class="route" id="r3"></div>
+    <div class="route" id="r4"></div>
+  </div>
+  <div id="boards">
+    <div id="board1">
+      <h1>このサイトについて</h1>
+      <p>フロントエンジニアMoscwaのホームページ兼ポートフォリオです。<br> 「next」ボタンを押して、順番にコンテンツを見て回れます。</p>
+      <div class="button">Next</div>
+    </div>
+    <div id="board2">
+      <h1>開発者について</h1>
+      <p>名前:Moscwa<br> Twitter:
+        <a href='https://twitter.com/' target="_blank">@moscwa_</a><br>
+        GitHub:<a href='https://github.com/moscwa' target="_blank">moscwa</a><br>
+        誰得な開発が好きな学生です。自然言語処理に興味があります。<br>現在、ニューラルネットワークを学習中。<br /> 超初心者 Kaggler
+      </p>
+      <div class="button">Next</div>
+    </div>
+    <div id="board3">
+      <h1>技術</h1>
+      <h4>ある程度できるやつ</h4>
+      <ul>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>python</li>
+        <li>Node.js</li>
+      </ul>
+      <h4>触ったことあるやつ</h4>
+      <ul>
+        <li>Unity</li>
+        <li>Flask</li>
+        <li>Django</li>
+        <li>C言語</li>
+      </ul>
+      <div class="button">Next</div>
+    </div>
+    <div id="board4">
+      <h1>制作物</h1>
+      <p>今まで作った制作物です。大したものは作っていません。</p>
+      <h3><a href='http://moscwa.github.io/code-art' target="_blank">CodeArt</a></h3>
+      <p>文章で画像を作ります。詳しくはリンク先の説明に書いてあります</p>
+      <h3><a href='https://github.com/moscwa/vote-slide' target="_blank">Vote-Presentation</a></h3>
+      <p>プレゼンでリアルタイム投票・コメントを可能にします</p>
+      <h3><a href="https://moscwa.github.io/hpp/">Html-Presnt-Point</a></h3>
+      <p>ブラウザベースのスライド作成サービスです。ppdxではなくhtmlで出力されるのが特徴です。</p>
+      <h3><a href="https://litews.azurewebsites.net/" target="_blank">Litews</a></h3>
+      <p>カウンタベース自然言語処理を用いたサービスです。<br />入力された文章が小説からの引用か、ニュース記事からの引用かを判定します。</p>
+      <h3><a href='http://moscwa.github.io/3d' target="_blank">3D-css</a></h3>
+      <p>CSSで3Dの練習をした時のやつです</p>
+      <div class="button">Next</div>
+    </div>
+    <div id="board5">
+      <h1>お仕事</h1>
+      <p>簡単なアルバイトは募集中ですが、学生身分なのでそこまで積極的な就活はやってないです。</p>
+      <br />
+      <h1>最後に</h1>
+      <p>ここまで付き合っていただきありがとうございました。<br />
+      なお、もう1度見る場合、ショートカットとして Shift+C をおすことで、すべてのポイントを解放できます</p>
+      <div id="button_f" class="button">Finish!</div>
+    </div>
+  </div>
+
+  <div id="zoom">
+    <div id="minus"></div>
+    <div id="plus"></div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
