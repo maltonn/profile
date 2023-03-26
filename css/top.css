@@ -1,24 +1,27 @@
 body{
     /* font-weight: bold; */
     /*font-size: 2rem;*/
-    /*overflow: hidden;*/
-    animation: ChangeColor1;
-    animation-delay: 1600ms;
-    animation-fill-mode: forwards;
+    overflow-x: hidden;
+
 }
 .no-margin{
     margin: 0;
 }
 
+
+
+#top-container{
+    background-color: white;
+    height: 100vh;
+    animation: ChangeColor1;
+    animation-delay: 1600ms;
+    animation-fill-mode: forwards;
+}
 @keyframes ChangeColor1{
     to{
         background-color:black;
         /*overflow: auto;*/
     }
-}
-
-#top-container{
-    height: 100vh;
 }
 #box1{
     z-index: 10;

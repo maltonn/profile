@@ -1,7 +1,7 @@
 body{
     color:white;
-    font-family: 'Yu Gothic';
-    
+    font-family: 'DM Sans', sans-serif;
+    background-color: black;
 }
 main{
     animation : displayBlock 1s;
