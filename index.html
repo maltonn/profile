@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='css/top.css'>
     <link rel='stylesheet' href='css/style.css'>
     <title>Malton</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="Malton" />
+    <meta property="og:type" content="ページの種類" />
+    <meta property="og:image" content="https://github.com/maltonn/malton/blob/master/img/ogp.png?raw=true" />
+    <meta property="og:site_name" content="Malton" />
+    <meta property="og:description" content="ポートフォリオ的な何か" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+        window.onload=()=>{    
+            scrollTo(-1000,-1000)
+        }
+    </script>
 </head>
 
 <body>
@@ -14,6 +33,9 @@
         <a href='https://twitter.com/maltonn_'>@maltonn_</a>
     </div>
     -->
+    <div id="top-container">
+
+    
     <div id='box1'>
         <h1>Malton</h1>
         <div id='stripe1' class='stripe'></div>
@@ -21,7 +43,7 @@
         <div id='stripe3' class='stripe'></div>
         <div id='bar1'></div>
 
-        <main>
+        <div id="top">
             <h2>
                 <span>M</span>
                 <span>a</span>
@@ -30,11 +52,140 @@
                 <span>o</span>
                 <span>n</span>
             </h2>
-            <div class='links'>
+            <!-- <div class='links'>
                 <p><a class='a1 no-margin'>about me</a></p>
                 <p><a class="a2">about this site</a></p>
+            </div> -->
+        </div>
+    </div>
+</div>
+    <main>
+        <h1>Who am I</h1>
+        <div id="members" class="flex">
+            <div class="member">
+                <div class="member-img">
+                    <a href="https://twitter.com/maltonn_" target="_blank">
+                        <img class="icon" src="img/icon1.jpg" alt="icon">
+                    </a>
+                </div>
+                <div class="member-name">
+                    <h2>Malton</h2>
+                    <p>誰の役にも立たないようなアプリを作るのが好きな大学生。Webとか機械学習とか競技プログラミングとか量子アルゴリズムとかUnityとかの話ができる。声質変換がマイブーム</p>
+                </div>
             </div>
-        </main>
+        </div>
+
+        <h1>Works / Activities</h1>
+        <div class="flex">
+            <div class="work">
+                <div class="work-img link">
+                    <a href="https://optic-malton.netlify.app/editor/" target="_blank">
+                        <img class="work-img" src="img/optic.png" alt="work-img">
+                    </a>
+                </div>
+                <div class="work-name">
+                    <a href="https://optic-malton.netlify.app/editor/" target="_blank">
+                        <h2>OPTIC</h2>
+                    </a>
+                    <p class="subtitle">自作 Google スライドもどき</p>
+                    <p>プレゼン作成ツールとして一通りの機能とリアルタイム投票を兼ね備えたサービス / 完全フルスクラッチでpureなhtml, css, jsのみを使って書かれている /
+                        技育展2021登壇作品</p>
+                </div>
+            </div>
+
+            <div class="work">
+                <div class="work-img link">
+                    <a href="https://othello-malton.herokuapp.com/" target="_blank">
+                        <img class="work-img" src="img/othello.png" alt="work-img">
+                    </a>
+                </div>
+                <div class="work-name">
+                    <a href="https://othello-malton.herokuapp.com/" target="_blank">
+                        <h2>Othello </h2>
+                    </a>
+                    <p class="subtitle">ほどほどに強い自作オセロAI</p>
+                    <p>n手先読み全探索アルゴリズム / 近年話題の機械学習とは程遠いが、別にそんなに弱いわけではない</p>
+                </div>
+            </div>
+
+            <div class="work">
+                <div class="work-img link">
+                    <a href="https://hjan.netlify.app/open/#" target="_blank">
+                        <img class="work-img" src="img/dice.png" alt="work-img">
+                    </a>
+                </div>
+                <div class="work-name">
+                    <a href="https://hjan.netlify.app/open/#" target="_blank">
+                        <h2>Random Dice</h2>
+                    </a>
+                    <p class="subtitle">性癖足し算ダイス</p>
+                    <p>VTuber社築さんの企画「性癖足し算ダイス」を友達数人集めてやった時のやつ / 企画のバカさと、その割には凝ってるアニメーションが特徴 </p>
+                </div>
+            </div>
+
+            <div class="work">
+                <div class="work-img link">
+                    <a href="https://maltonn.github.io/550/client/" target="_blank">
+                        <img class="work-img" src="img/550.png" alt="work-img">
+                    </a>
+                </div>
+                <div class="work-name">
+                    <a href="https://maltonn.github.io/550/client/" target="_blank">
+                        <h2>Gacha</h2>
+                    </a>
+                    <p class="subtitle">学食ぴったり550円ガチャ</p>
+                    <p>大学生協のミールパスは1日550円まで学食で食事ができます / アルゴリズムは半分全列挙（名前がかっこいい！）を採用</p>
+                </div>
+            </div>
+
+            <div class="work">
+                <div class="work-img link">
+                    <a href="https://maltonn.github.io/form/" target="_blank">
+                        <img class="work-img" src="img/null.png" alt="work-img">
+                    </a>
+                </div>
+                <div class="work-name">
+                    <a href="https://maltonn.github.io/form/" target="_blank">
+                        <h2>Form</h2>
+                    </a>
+                    <p class="subtitle">超お手軽フォーム作成キット</p>
+                    <p>URLパラメーターをいじるだけでそれっぽいフォームができるサービス / Google Form持ち出すほどでもないなー という時に</p>
+                </div>
+            </div>
+
+            <div class="work">
+                <div class="work-img">
+                    <img class="work-img" src="img/miku.jpg" alt="work-img">
+                </div>
+                <div class="work-name">
+                    <h2>Miku live</h2>
+                    <p class="subtitle">初音ミクの3Dライブ実験</p>
+                    <p>高校の部活動でのプロジェクト / 農ポリを用いたポリッドスクリーンで部室内に初音ミクを召喚させた / なお、受験年の10月ごろの話である</p>
+                </div>
+            </div>
+            <div class="work">
+                <div class="work-img">
+                    <img class="work-img" src="img/sechack.png" alt="work-img">
+                </div>
+                <div class="work-name">
+                    <h2>SecHack365'19</h2>
+                    <p class="subtitle">著者識別による改ざん文書の検知</p>
+                    <p>自分にとって初めての研究活動。自然言語処理を使って著者識別による文書改ざん検知に挑んだ。</p>
+                </div>
+            </div>
+        </div>
+
+        <h1>Social</h1>
+        <div class="margin-bottom flex">
+            <div class="icon-dev"><a href="https://twitter.com/maltonn_" target="_blank"><img class="social-icon"
+                        src="img/twitter.svg"></a></div>
+            <div class="icon-dev"><a href="https://github.com/maltonn" target="_blank"><img class="social-icon"
+                        src="img/github-white.png"></a></div>
+        </div>
+    </main>
+
+
+
     </div>
 
     <div id='square1'></div>
@@ -44,4 +195,5 @@
 
     <script src='js/main.js'></script>
 </body>
+
 </html>

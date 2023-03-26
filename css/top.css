@@ -1,0 +1,290 @@
+body{
+    /* font-weight: bold; */
+    /*font-size: 2rem;*/
+    /*overflow: hidden;*/
+    animation: ChangeColor1;
+    animation-delay: 1600ms;
+    animation-fill-mode: forwards;
+}
+.no-margin{
+    margin: 0;
+}
+
+@keyframes ChangeColor1{
+    to{
+        background-color:black;
+        /*overflow: auto;*/
+    }
+}
+
+#top-container{
+    height: 100vh;
+}
+#box1{
+    z-index: 10;
+    position: absolute;
+    width:70vmin;
+    height:30vmin;
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+    margin: auto;
+    /*border: 2px solid;
+    border-color: black;*/
+    font-size:8vmin;
+    overflow: hidden;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    animation:ChangeColor2 0ms step-end 800ms, anime5 600ms ease 1500ms;
+    animation-fill-mode: forwards;
+}
+@keyframes ChangeColor2{
+    to{
+        border-color:white;
+    }
+}
+#square1{
+    position: absolute;
+    width:50vmin;
+    height:50vmin;
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+    margin: auto;
+    transform: scale(0) rotate(45deg);
+    background-color: black;
+    overflow: hidden;
+    animation: anime1;
+    animation-duration: 1000ms;
+}
+@keyframes anime1{
+    to{
+        transform: scale(1) rotate(45deg);
+    }
+}
+#square2{
+    position: absolute;
+    width:50vmin;
+    height:50vmin;
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+    margin: auto;
+    transform: scale(0) rotate(45deg);
+    background-color: white;
+    overflow: hidden;
+    animation: anime1;
+    animation-duration: 900ms;
+    animation-delay: 100ms;
+}
+#square3{
+    position: absolute;
+    width:50vmax;
+    height:50vmax;
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+    margin: auto;
+    transform: scale(0) rotate(45deg);
+    background-color: black;
+    overflow: hidden;
+    animation: anime2;
+    animation-duration: 1200ms;
+    animation-delay: 600ms;
+}
+@keyframes anime2{
+    to{
+        transform: scale(3) rotate(45deg);
+    }
+}
+
+#box1 > .stripe{
+    position: absolute;
+    top:0;
+    width:20%;
+    height:100%;
+    left:0;
+    
+    transform: skewX(-30deg) translateX(-100%);
+    background-color: white;
+    transition-duration: 500ms;
+    
+    animation:anime3;
+    animation-duration: 700ms;
+    animation-fill-mode: forwards;
+}
+#box1 >#stripe1{
+    animation-delay: 800ms;
+}
+#box1 >#stripe2{
+    animation-delay: 900ms;
+}
+#box1 >#stripe3{
+    animation-delay: 1000ms;
+}
+@keyframes anime3{
+    to{
+        transform: skew(-30deg) translateX(600%);
+    }
+}
+
+#box1 > #bar1{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:0;
+    margin:auto;
+    height: 40%;
+    width: 100%;;
+    background-color: white;
+
+    transform: translateX(-100%);
+    animation:anime4;
+    animation-duration: 400ms;
+    animation-fill-mode: forwards;
+    animation-delay: 1100ms;
+}
+@keyframes anime4{
+    60%{
+        transform: translateX(0);
+    }
+    100%{
+        transform:translateX(0) scaleY(0);
+    }
+}
+
+#box1 >h1{
+    animation: Disappear;
+    animation-delay: 1000ms;
+    animation-fill-mode: forwards;
+}
+@keyframes Disappear{
+    to{
+        opacity: 0;
+    }
+}
+
+#box1{
+    /*anime5*/
+}
+@keyframes anime5{
+    to{
+        height:90%;
+        width: 90%;
+    }
+}
+
+#top{
+    opacity: 0;
+    position:absolute;
+    animation:Appear 0ms step-end 2100ms;
+    animation-fill-mode: forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#top > h2{
+    margin: 0;
+    height: 1.5em;
+}
+#top >h2 >span{
+    float: left;
+    margin: 0;
+    opacity: 0;
+    transform: translateY(30%);
+    animation:anime6 1s ease;
+    animation-fill-mode: forwards;
+}
+@keyframes anime6{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#top >h2 :nth-child(1){
+    animation-delay: 2100ms;
+}
+#top >h2 :nth-child(2){
+    animation-delay: 2200ms;
+}
+#top >h2 :nth-child(3){
+    animation-delay: 2300ms;
+}
+#top >h2 :nth-child(4){
+    animation-delay: 2400ms;
+}
+#top >h2 :nth-child(5){
+    animation-delay: 2500ms;
+}
+#top >h2 :nth-child(6){
+    animation-delay: 2500ms;
+}
+#top a{
+    position:relative;
+    position: relative;
+    transform:scaleX(0);
+    animation:Appear 0ms step-end;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes Appear{
+    to{
+        opacity: 1;
+    }
+}
+/* #top > .links a.a1{
+    animation-delay: 3100ms;
+}
+#top > .links a.a2{
+    animation-delay: 3200ms;
+}
+#top > .links a::after{
+    transform-origin: right;
+}
+#top > .links a.a1::after{
+    animation-delay: 2600ms;
+}
+#top > .links a.a2::after{
+    animation-delay: 2700ms;
+} */
+
+#top p{
+    font-size: .4em;
+    margin: 0;
+}
+
+#top a::after{
+    position: absolute;
+    content:'';
+    left:0;
+    top:0;
+    width:100%;
+    height: 100%;
+    background-color:white;
+    transform: scaleX(0);
+    transform-origin: right;
+    animation:anime7 1s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes anime7{
+    50%{
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+    51%{
+        transform-origin: left;
+    }
+    100%{
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+}
