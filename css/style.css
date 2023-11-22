@@ -9,7 +9,6 @@ main{
     animation-fill-mode: forwards;
 }
 
-
 main h1{
     font-size: 4em;
     text-align: center;
@@ -83,4 +82,6 @@ main a{
 .none{
     display: none;
 }
-
+p.center{
+    text-align: center;
+}
