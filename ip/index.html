@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #result {
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="result"></div>
+    <script>
+        fetch("https://ipinfo.io/json").then(res => res.json()).then(data => {
+            console.log(data);
+            document.getElementById("result").innerHTML = data.ip;
+        });
+    </script>
+</body>
+</html>
