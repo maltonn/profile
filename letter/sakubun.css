@@ -9,14 +9,14 @@ body {
   font-family:  "MS 明朝", serif;
 }
 #container {
-  width: 200%;
+  width: 1000px;
   height: 100%;
   overflow-y: hidden;
   overflow-x: auto;
   
 }
 .sakubun {
-  width: 200%;
+  width: 1000px;
   height: 100vh;
 
   font-size: 28px;
