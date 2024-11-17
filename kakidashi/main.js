@@ -71,3 +71,5 @@ document.getElementById('go_to_next_book').addEventListener('click', () => {
   document.getElementById('go_to_next_book').style.opacity = 0;
   callback()
 })
+
+fetch("https://rd.maltonn.com/log?c=kakidashi")
