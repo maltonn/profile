@@ -100,3 +100,9 @@
   @keyframes l28 {
     100% {transform: rotate(1turn)}
   }
+
+  #scrolltoright{
+    position: absolute;
+    top:60%;
+    left: 50%;
+  }
