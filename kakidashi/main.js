@@ -7,6 +7,7 @@ const requestParams = {
     "Content-Type": "application/x-www-form-urlencoded",
   },
 };
+
 fetch(url, requestParams)
   .then((response) => response.json())
   .then((result) => {
@@ -21,9 +22,9 @@ fetch(url, requestParams)
 // setTimeout(() => {
 //   data = [
 //     ['', '大正浪漫 YOASOBI『大正浪漫』原作小説', 'NATSUMI', '単行本', '', '', '時翔。'],
-//     ['', 'HOOT', 'カール・ハイアセン', '単行本', '', '', 'その日、ロイが不思議な少年に気づいたのは、いってみればダナ・マザーソンのおかげだった。'],
-//     ['', '忘れられた巨人', 'カズオ・イシグロ', '文庫', '？', '', 'イングランドと聞けば、後世の人はのどかな草地とその中をのんびりとうねっていく小道を連想するだろう。'],
-//     ['', '日の名残り', 'カズオ・イシグロ', '文庫', '⭐︎', '', 'ここ数日来、頭から離れなかった旅行の件が、どうやら、しだいに現実のものとなっていくようです。'],
+//     ['', 'HOOT', 'カール・ハイアセン', '漫画', '', '', 'その日、ロイが不思議な少年に気づいたのは、いってみればダナ・マザーソンのおかげだった。'],
+//     ['', '忘れられた巨人', 'カズオ・イシグロ', '漫画', '？', '', 'イングランドと聞けば、後世の人はのどかな草地とその中をのんびりとうねっていく小道を連想するだろう。'],
+//     ['', '日の名残り', 'カズオ・イシグロ', '漫画', '⭐︎', '', 'ここ数日来、頭から離れなかった旅行の件が、どうやら、しだいに現実のものとなっていくようです。'],
 //     ['', 'わたしたちが孤児だったころ', 'カズオ・イシグロ', '文庫', '？', '', '一九二三年の夏のことだった。'],
 //   ]
 //   callback()
@@ -42,6 +43,8 @@ function callback() {
   }
   document.getElementById('title').innerText = data[r][1];
   document.getElementById('author').innerText = data[r][2];
+  
+  document.getElementById('addition').innerText = data[r][3]=='漫画'? '【漫画】':'';
 
   F = (i) => {
     document.getElementById('kakidashi').innerText = kakidashi.slice(0, i);
