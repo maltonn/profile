@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            const binaryData = new Uint8Array([72, 101, 108, 108, 900]); // "Hello"をバイナリで表現
+            console.log(binaryData); // Uint8Array(5) [72, 101, 108, 108, 111]
+            const text = new TextDecoder().decode(binaryData);
+            console.log(text); // "Hello"
+    </script>
+</body>
+</html>
