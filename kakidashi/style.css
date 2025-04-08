@@ -1,6 +1,6 @@
 #read_this_book,
 #go_to_next_book {
-    opacity: 0;
+    /* opacity: 0; */
     transition-duration: 200ms;
     cursor: pointer;
 }

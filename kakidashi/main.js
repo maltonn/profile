@@ -7,6 +7,8 @@ const requestParams = {
     "Content-Type": "application/x-www-form-urlencoded",
   },
 };
+document.getElementById('read_this_book').style.opacity = 0;
+document.getElementById('go_to_next_book').style.opacity = 0;
 
 fetch(url, requestParams)
   .then((response) => response.json())
